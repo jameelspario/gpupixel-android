@@ -1,8 +1,7 @@
 /*
  * GPUPixel
  *
- * Created by PixPark on 2021/6/24.
- * Copyright © 2021 PixPark. All rights reserved.
+
  */
 
 #include "gpupixel/filter/single_component_gaussian_blur_filter.h"

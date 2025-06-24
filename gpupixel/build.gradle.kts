@@ -14,7 +14,16 @@ android {
         consumerProguardFiles("consumer-rules.pro")
 
         ndk {
-            abiFilters += listOf("arm64-v8a")
+            abiFilters += listOf("arm64-v8a", "armeabi-v7a")
+        }
+
+        externalNativeBuild{
+            cmake {
+                arguments += listOf(
+                    "-DGPUPIXEL_BUILD_SHARED_LIBS=ON",
+                    "-DGPUPIXEL_ENABLE_FACE_DETECTOR=ON"
+                )
+            }
         }
 
     }
